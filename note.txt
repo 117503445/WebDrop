@@ -1,0 +1,4 @@
+## Server
+
+cd be
+docker build -t 117503445/bittorrent-tracker .
