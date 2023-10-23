@@ -2,3 +2,6 @@
 
 cd be
 docker build -t 117503445/bittorrent-tracker .
+docker run --rm 117503445/bittorrent-tracker
+docker run -it --rm 117503445/bittorrent-tracker
+docker push 117503445/bittorrent-tracker

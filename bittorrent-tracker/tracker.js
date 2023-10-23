@@ -1,6 +1,6 @@
 // https://github.com/subins2000/p2pt/blob/master/startTracker.js
 
-var Server = require('bittorrent-tracker').Server
+import { Server } from 'bittorrent-tracker'
 
 var server = new Server({
   udp: false, // enable udp server? [default=true]
