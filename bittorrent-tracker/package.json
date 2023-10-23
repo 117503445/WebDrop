@@ -1,0 +1,9 @@
+{
+  "name": "bittorrent-tracker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bittorrent-tracker": "^10.0.12"
+  }
+}

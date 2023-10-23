@@ -1,4 +1,4 @@
-FROM node
+FROM gcr.io/distroless/nodejs20-debian12
 WORKDIR /app
 COPY . .
 RUN yarn install

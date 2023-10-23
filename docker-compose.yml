@@ -8,7 +8,19 @@ services:
     container_name: bittorrent-tracker-dev
     # restart: unless-stopped
     volumes:
-        - './bittorrent-tracker:/workspace/bittorrent-tracker-dev'
+        - './bittorrent-tracker:/workspace/bittorrent-tracker'
         - './vsc_extensions/bittorrent-tracker:/root/.vscode-server/extensions'
+    stdin_open: true
+    tty: true
+  webdrop-dev:
+    build:
+      context: ./webdrop
+      dockerfile: Dockerfile_dev
+
+    container_name: webdrop-dev
+    # restart: unless-stopped
+    volumes:
+        - './webdrop:/workspace/webdrop'
+        - './vsc_extensions/webdrop:/root/.vscode-server/extensions'
     stdin_open: true
     tty: true
