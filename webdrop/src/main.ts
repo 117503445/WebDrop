@@ -51,10 +51,11 @@ Vue.component('Header', Header)
 Vue.directive('linkified', linkify)
 
 let announceURLs = [
-  'wss://tracker.openwebtorrent.com',
-  'wss://tracker.webtorrent.dev',
-  'wss://tracker.btorrent.xyz',
-  'wss://tracker.files.fm:7073/announce'
+  'wss://bittorrent-tracker.ali.117503445.top'
+  // 'wss://tracker.openwebtorrent.com',
+  // 'wss://tracker.webtorrent.dev',
+  // 'wss://tracker.btorrent.xyz',
+  // 'wss://tracker.files.fm:7073/announce'
   // 'ws://192.168.100.7:5000'
 ]
 

@@ -5,3 +5,11 @@ docker build -t 117503445/bittorrent-tracker .
 docker run --rm 117503445/bittorrent-tracker
 docker run -it --rm 117503445/bittorrent-tracker
 docker push 117503445/bittorrent-tracker
+
+cd webdrop
+docker build -t webdrop-builder .
+docker run -it --rm -v $PWD:/app webdrop-builder
+
+PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn
+
+apt-get install libxss1
